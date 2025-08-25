@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Study Buddy - AI-Powered Preparation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen text-gray-800">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">JEE</span>
+                </div>
+                <h1 class="text-white text-xl font-bold">JEE Study Buddy</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#dashboard" class="text-white hover:text-red-200 transition">Dashboard</a>
+                <a href="#study-rooms" class="text-white hover:text-red-200 transition">Study Rooms</a>
+                <a href="#resources" class="text-white hover:text-red-200 transition">Resources</a>
+                <a href="#progress" class="text-white hover:text-red-200 transition">Progress</a>
+                <a href="#mock-tests" class="text-white hover:text-red-200 transition">Mock Tests</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button id="languageToggle" class="px-4 py-2 bg-white bg-opacity-20 text-white rounded-lg hover:bg-opacity-30 transition">
+                    English / हिंदी
+                </button>
+                <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Crack JEE with <span class="gradient-text">AI Power</span>
+            </h1>
+            <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
+                Your intelligent study companion for JEE Main & Advanced preparation with Physics, Chemistry, Mathematics focus and bilingual support.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition text-lg font-semibold">
+                    Start Free Trial
+                </button>
+                <button class="px-8 py-4 bg-white bg-opacity-20 text-white rounded-lg hover:bg-opacity-30 transition text-lg font-semibold">
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Powerful Features for JEE Success</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 rounded-xl glass-effect">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🗣️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bilingual Support</h3>
+                    <p class="text-gray-600">Study in both English and Hindi with voice recognition and text-to-speech</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6 rounded-xl glass-effect">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🔬</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Subject Mastery</h3>
+                    <p class="text-gray-600">Advanced tools for Physics, Chemistry, and Mathematics concepts</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6 rounded-xl glass-effect">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Group Collaboration</h3>
+                    <p class="text-gray-600">Join study rooms, chat with peers, and solve problems together</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-6 rounded-xl glass-effect">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Progress Tracking</h3>
+                    <p class="text-gray-600">Real-time analytics and personalized recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Master JEE Subjects</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Physics -->
+                <div class="subject-card bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">⚛️</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-red-600">Physics</h3>
+                    <ul class="text-left space-y-2 text-gray-600">
+                        <li>• Mechanics & Thermodynamics</li>
+                        <li>• Electromagnetism</li>
+                        <li>• Modern Physics</li>
+                        <li>• Optics & Waves</li>
+                        <li>• Problem Solving Techniques</li>
+                    </ul>
+                    <button class="mt-6 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                        Start Learning
+                    </button>
+                </div>
+
+                <!-- Chemistry -->
+                <div class="subject-card bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🧪</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Chemistry</h3>
+                    <ul class="text-left space-y-2 text-gray-600">
+                        <li>• Physical Chemistry</li>
+                        <li>• Organic Chemistry</li>
+                        <li>• Inorganic Chemistry</li>
+                        <li>• Chemical Bonding</li>
+                        <li>• Reaction Mechanisms</li>
+                    </ul>
+                    <button class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                        Start Learning
+                    </button>
+                </div>
+
+                <!-- Mathematics -->
+                <div class="subject-card bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">∫</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-green-600">Mathematics</h3>
+                    <ul class="text-left space-y-2 text-gray-600">
+                        <li>• Calculus & Algebra</li>
+                        <li>• Coordinate Geometry</li>
+                        <li>• Probability & Statistics</li>
+                        <li>• Trigonometry</li>
+                        <li>• Advanced Problem Solving</li>
+                    </ul>
+                    <button class="mt-6 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                        Start Learning
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Integration Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Powered by Advanced AI</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Intelligent JEE Assistant</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our platform integrates cutting-edge AI technologies specifically tailored for JEE preparation:
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <span class="text-red-600">✓</span>
+                            </div>
+                            <span>OpenAI GPT-4 for step-by-step problem solving</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <span class="text-red-600">✓</span>
+                            </div>
+                            <span>Google Gemini for multilingual content processing</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <span class="text-red-600">✓</span>
+                            </div>
+                            <span>Wolfram Alpha for mathematical computations</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <span class="text-red-600">✓</span>
+                            </div>
+                            <span>Hugging Face models for subject-specific analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-xl">
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-3">Ask JEE AI Assistant</h4>
+                        <div class="bg-white rounded-lg p-4 mb-3 border">
+                            <p class="text-sm text-gray-600">"Explain projectile motion concepts with examples..."</p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <input type="text" placeholder="Type your JEE question..." class="flex-1 px-4 py-2 border rounded-lg">
+                            <button class="px-4 py-2 bg-red-600 text-white rounded-lg">Ask</button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center space-x-4">
+                        <button id="startListening" class="px-4 py-2 bg-green-600 text-white rounded-lg flex items-center space-x-2">
+                            <span>🎤</span>
+                            <span>Speak Question</span>
+                        </button>
+                        <button class="px-4 py-2 bg-gray-600 text-white rounded-lg flex items-center space-x-2">
+                            <span>🔊</span>
+                            <span>Hear Explanation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Room Demo -->
+    <section id="study-rooms" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Collaborative Study Rooms</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="bg-gray-900 rounded-2xl p-6 text-white">
+                    <h3 class="text-2xl font-semibold mb-4">Live JEE Study Session</h3>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gray-800 rounded-lg p-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d2e75a6f-a07b-4fb1-95d8-b2d5c5b1360a.png" alt="JEE aspirant solving physics problems in virtual study room" class="w-full h-32 object-cover rounded mb-2" onerror="this.style.display='none'">
+                            <p class="text-sm">Physics Focus</p>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg p-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc5b9f70-271e-4a9f-927f-38b5f3b72893.png" alt="Student sharing chemistry reaction mechanisms on digital whiteboard" class="w-full h-32 object-cover rounded mb-2" onerror="this.style.display='none'">
+                            <p class="text-sm">Chemistry Group</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span>Group Chat</span>
+                            <span class="text-sm text-gray-400">8 online</span>
+                        </div>
+                        <div class="h-32 overflow-y-auto mb-2">
+                            <div class="text-sm mb-2"><strong>Rahul:</strong> Can someone help with integration by parts?</div>
+                            <div class="text-sm mb-2"><strong>Priya:</strong> Sure! Which problem are you stuck on?</div>
+                            <div class="text-sm mb-2"><strong>Rahul:</strong> ∫ x·sin(x) dx</div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <input type="text" placeholder="Type message..." class="flex-1 px-3 py-2 bg-gray-700 rounded">
+                            <button class="px-4 py-2 bg-red-600 rounded">Send</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Create JEE Study Room</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Room Name</label>
+                            <input type="text" placeholder="e.g., JEE Physics Mastery" class="w-full px-4 py-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Subject Focus</label>
+                            <select class="w-full px-4 py-2 border rounded-lg">
+                                <option>Physics</option>
+                                <option>Chemistry</option>
