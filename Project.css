@@ -1,0 +1,27 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Hind:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #dc2626;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #ef4444 0%, #7c3aed 100%);
+            min-height: 100vh;
+        }
+        
+        .hindi-font {
+            font-family: 'Hind', sans-serif;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .gradient-text {
